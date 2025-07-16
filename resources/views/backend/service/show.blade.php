@@ -19,7 +19,7 @@
                   <td> {{$service->id}} </td>
                   <td> {{$service->title}} </td>
                   <td>{{$service->paragraph}}</td>
-                    <td><img src="{{ asset('storage/' . $service->image) }}" width="100" alt="Image"></td>
+                    <td><img src="{{ asset($item->image) }}" width="100" alt="Image"></td>
                   <td>
                   <a href={{ route('service') }} class="btn btn-success">
                     <i class="fa-solid fa-house"></i>

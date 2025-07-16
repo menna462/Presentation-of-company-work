@@ -28,7 +28,7 @@
                                     <td>{{ $item->product->name }}</td>
                                     <td>
                                         @if ($item->image_path)
-                                            <img src="{{ asset(path: 'imges/products/'. $item->image_path) }}" width="100" alt="Image">
+                                            <img src="{{ asset('imges/products/' . $item->image_path) }}" width="100" alt="Image">
                                         @else
                                             لا توجد صورة
                                         @endif

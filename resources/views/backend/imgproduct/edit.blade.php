@@ -19,12 +19,12 @@
                             <br>
                             @if (in_array(strtolower($ext), ['mp4', 'webm', 'ogg']))
                                 <video width="250" height="150" controls style="border:1px solid #ccc; padding:5px;">
-                                    <source src="{{ asset('imges/products/' . $result->image_path) }}"
+                                    <source src="{{ asset('imges/products/' . $item->image_path) }}"
                                         type="video/{{ $ext }}">
                                     المتصفح لا يدعم عرض الفيديو.
                                 </video>
                             @else
-                                <img src="{{ asset('imges/products/' . $result->image_path) }}" width="150"
+                                <img src="{{ asset('imges/products/' . $item->image_path) }}" width="150"
                                     alt="Current Media" style="border:1px solid #ccc; padding:5px;">
                             @endif
                         </div>

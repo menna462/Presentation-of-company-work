@@ -26,10 +26,12 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
 
-                    @if ($result->images)
+                    @if ($result->image)
+                        {{-- تأكد من استخدام $result->image --}}
                         <div class="mt-3">
                             <p>Current Image:</p>
-                            <img src="{{ asset($images->image) }}" width="200" alt="Image">
+                            {{-- المسار هنا صحيح لأن $result->image يحتوي على المسار الكامل من مجلد public --}}
+                            <img src="{{ asset($result->image) }}" width="200" alt="Service Image">
                         </div>
                     @endif
 
