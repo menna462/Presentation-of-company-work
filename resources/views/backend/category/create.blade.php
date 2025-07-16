@@ -11,10 +11,7 @@
                     @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-
-
-
-                    <input type="submit" class="btn btn-success btn-block mt-5" value="Create New About">
+                    <input type="submit" class="btn btn-success btn-block mt-5" value="Create New Category">
                 </form>
             </div>
         </div>

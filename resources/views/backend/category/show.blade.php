@@ -3,7 +3,7 @@
 <div class="container ">
     <div class="row">
       <div class="col-md-8  align-items-center ">
-        <h3 class="text-center mb-3">Details of product <span class="badge badge-primary">{{$category ->count()}}</span> </h3>
+        <h3 class="text-center mb-3">Details of Category <span class="badge badge-primary">{{$category ->count()}}</span> </h3>
         <table class="table ">
           <thead>
             <tr>

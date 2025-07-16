@@ -62,25 +62,22 @@ public function edit(string $id)
         $old_id = $request->old_id;
         $imgproduct = Imgproduct::findOrFail($old_id);
 
-        // التحقق إذا كان فيه صورة جديدة مرفوعة
+
         if ($request->hasFile("image_path")) {
-            // حذف الصورة القديمة لو كانت موجودة (اختياري)
+
             if ($imgproduct->image_path && file_exists(public_path('imges/products/' . $imgproduct->image_path))) {
                 unlink(public_path('imges/products/' . $imgproduct->image_path));
             }
 
-            // حفظ الصورة الجديدة
             $image = $request->file("image_path"); // استخدم file() لاستقبال الملف
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move(public_path('imges/products/'), $imageName);
 
-            // تحديث اسم الصورة في قاعدة البيانات
             $imgproduct->update([
                 "product_id" => $request->product_id,
                 "image_path" => $imageName,
             ]);
         } else {
-            // لو مفيش صورة جديدة، هنحتفظ بالصورة القديمة واسم المنتج بس
             $imgproduct->update([
                 "product_id" => $request->product_id,
             ]);

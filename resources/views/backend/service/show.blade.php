@@ -3,7 +3,7 @@
 <div class="container ">
     <div class="row">
       <div class="col-md-8  align-items-center ">
-        <h3 class="text-center mb-3">Details of product <span class="badge badge-primary">{{$service ->count()}}</span> </h3>
+        <h3 class="text-center mb-3">Details of service <span class="badge badge-primary">{{$service ->count()}}</span> </h3>
         <table class="table ">
           <thead>
             <tr>
@@ -19,7 +19,7 @@
                   <td> {{$service->id}} </td>
                   <td> {{$service->title}} </td>
                   <td>{{$service->paragraph}}</td>
-                    <img src="{{ asset('storage/' . $service->image) }}" width="100" alt="Image">
+                    <td><img src="{{ asset('storage/' . $service->image) }}" width="100" alt="Image"></td>
                   <td>
                   <a href={{ route('service') }} class="btn btn-success">
                     <i class="fa-solid fa-house"></i>

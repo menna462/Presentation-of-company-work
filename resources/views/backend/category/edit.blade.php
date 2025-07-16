@@ -16,7 +16,7 @@
 
 
 
-                    <input type="submit" class="btn btn-success btn-block mt-4" value="Update About">
+                    <input type="submit" class="btn btn-success btn-block mt-4" value="Update Category">
                 </form>
             </div>
         </div>

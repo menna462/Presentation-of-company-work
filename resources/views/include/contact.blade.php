@@ -1,4 +1,3 @@
-<!-- قسم اتصل بنا -->
 <section id="contact" class="contact-section">
     <div class="container ">
         <h2 class="section-title">اتصل بنا</h2>
@@ -8,21 +7,23 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="text-center">
                     <h4>العنوان</h4>
-                    <p>الرياض، المملكة العربية السعودية</p>
+                    <p>لفرع الرئيسي: الخرطوم السجانه شرق البرج الماليزي عمارة رقم 5 الشقه في الطابق الاول,</p>
+
+                      <p>فرع بورسودان: بورسودان حي الخليج مريم 2 عقار رقم 66 الطابق الثالث </p>
                 </div>
             </div>
             <div class="info-item">
                 <i class="fas fa-phone"></i>
                 <div class="text-center">
                     <h4>الهاتف</h4>
-                    <li style="list-style-type: none;"><a href="https://wa.me/966531443917" target="_blank">+966531443917</a></li>
+                    <li style="list-style-type: none;"><a href="https://wa.me/20112066669" target="_blank">+20112066669</a></li>
                 </div>
             </div>
             <div class="info-item">
                 <i class="fas fa-envelope"></i>
                 <div class="text-center">
                     <h4>البريد الإلكتروني</h4>
-                    <p>info@sescc.sud</p>
+                    <p>SESCC2026@sescc-sud.com</p>
                 </div>
             </div>
 

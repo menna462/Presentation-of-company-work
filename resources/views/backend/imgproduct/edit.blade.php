@@ -50,7 +50,7 @@
                     @error('product_id')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
-                    <input type="submit" class="btn btn-success btn-block mt-5" value="Edit Product">
+                    <input type="submit" class="btn btn-success btn-block mt-5" value="Edit imgProduct">
                 </form>
             </div>
         </div>

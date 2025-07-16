@@ -8,7 +8,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
 
             </div>
-            <a href="{{ route('service.create') }}" class="btn btn-success"> Create New About</a>
+            <a href="{{ route('service.create') }}" class="btn btn-success"> Create New Service</a>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
